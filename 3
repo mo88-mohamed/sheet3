@@ -1,0 +1,147 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m,n,k,menum,m4,m2,m3;
+    printf("press1 or 2 or0 to close\n");
+    scanf("%d",&menum);
+    switch(menum){
+        case 1:
+            printf("enter number1 \n");
+            scanf("%d",&m);
+            printf("enter number2 \n");
+            scanf("%d",&n);
+            printf("enter number3 \n");
+            scanf("%d",&k);
+            for(m;m<=n;m++){
+                if(m%2==0){
+                    printf("%d\n",m);
+            }
+            }
+            break;
+        case 2:
+            printf("enter number from 1 to 999\n");
+            scanf("%d",&n);
+            if (n>=1 && n<=999){
+                    m=n/100;
+                    m2=n%100;
+                    m3=m2/10;
+                    m4=n/10;
+                switch(m){
+                case 1:
+                    printf("one thousand");
+                    break;
+                case 2:
+                    printf("two thousand");
+                    break;
+                case 3:
+                    printf("three thousand");
+                    break;
+                case 4:
+                    printf("four thousand");
+                    break;
+                case 5:
+                    printf("five thousand");
+                    break;
+                case 6:
+                    printf("six thousand");
+                    break;
+                case 7:
+                    printf("seven thousand");
+                    break;
+                case 8:
+                    printf("eight thousand");
+                case 9:
+                    printf("nine thousand");
+                }
+                switch(m2){
+                case 10:
+                    printf(" and ten");
+                    break;
+                case 11:
+                    printf(" and eleven");
+                    break;
+                case 12:
+                    printf(" and twelve");
+                    break;
+                case 13:
+                    printf(" and thirteen");
+                    break;
+                case 14:
+                    printf(" and fourteen");
+                    break;
+                case 15:
+                    printf(" and fifteen");
+                case 16:
+                    printf(" and sixteen ");
+                    break;
+                case 17:
+                    printf(" and seventeen ");
+                    break;
+                case 18:
+                    printf(" and eighteen ");
+                     break;
+                case 19:
+                    printf(" and nineteen");
+                    break;
+                }
+                switch(m3){
+                case 2:
+                    printf(" and twenty");
+                    break;
+                case 3:
+                    printf(" and thirty");
+                    break;
+                case 4:
+                    printf(" and forty");
+                    break;
+                case 5:
+                    printf(" and fifty");
+                    break;
+                case 6:
+                    printf(" and sixty");
+                    break;
+                case 7:
+                    printf(" and seventy");
+                    break;
+                case 8:
+                    printf(" and eighty");
+                    break;
+                case 9:
+                    printf(" and ninety");
+                    break;
+                }
+                switch(m4){
+                case 1:
+                    printf(" one");
+                    break;
+                case 2:
+                    printf(" two");
+                    break;
+                case 3:
+                    printf(" three");
+                    break;
+                case 4:
+                    printf(" four");
+                    break;
+                case 5:
+                    printf(" fife");
+                    break;
+                case 6:
+                    printf(" six");
+                    break;
+                case 7:
+                    printf(" seven");
+                    break;
+                case 8:
+                    printf(" eight");
+                    break;
+                case 9:
+                    printf(" nine");
+                    break;
+                }
+                }
+            }
+    return 0;
+}
